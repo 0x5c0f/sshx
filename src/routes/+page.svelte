@@ -58,9 +58,18 @@
       <img class="h-16 -mx-1" src={logotypeDark} alt="sshx logo" />
     </header>
     <h1>
-      A secure web-based,
-      <span class="title-gradient">collaborative</span> terminal
+      一个基于网络安全的
+      <span class="title-gradient">协同</span> 终端
     </h1>
+    <h3>
+      <code>
+        请注意,当前为<a target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-2 text-gray-300"
+            href="https://tools.0x5c0f.cc/">博主</a>自建节点,与官方差异仅首页翻译。来访者可任意使用，但请优先以<a target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-2 text-gray-300"
+            href="https://sshx.io/">官方</a>为准🙏🙏🙏。</code></h3>
 
     <div class="relative">
       <div
@@ -81,17 +90,14 @@
 
     <section class="my-12 space-y-6 text-lg md:max-w-[460px] text-zinc-400">
       <p>
-        <code>sshx</code> lets you share your terminal with anyone by link, on a
-        <b>multiplayer infinite canvas</b>.
+        <code>sshx</code> 允许您通过链接与任何人共享终端, 并且支持<b>多人协作、无限终端</b>
       </p>
       <p>
-        It has <b>real-time collaboration</b>, with remote cursors and chat.
-        It's also <b>fast</b> and <b>end-to-end encrypted</b>, with a
-        lightweight server written in Rust.
+        它具有<b>实时协作</b>, 包括远程光标和聊天。它的<b>速度很快</b>并且是<b>端到端的加密</b>。
+        是使用Rust编写的轻量服务。
       </p>
       <p>
-        Install <code>sshx</code> with a single command. Use it for teaching, debugging,
-        or cloud access.
+        使用一个命令安装 <code>sshx</code>， 可用于教学、调试、或者是云访问。
       </p>
     </section>
 
@@ -111,49 +117,48 @@
         <div class="feature-icon">
           <CastIcon size="14" />
         </div>
-        <h3>Collaborative</h3>
-        <p>Invite people by sharing a secure, unique browser link.</p>
+        <h3>协同</h3>
+        <p>通过共享的独特安全浏览器链接邀请他人。</p>
       </div>
       <div class="feature-block">
         <div class="feature-icon">
           <HardDriveIcon size="14" />
         </div>
-        <h3>Cross-platform</h3>
-        <p>Install the client in under a second, on macOS and Linux.</p>
+        <h3>跨平台</h3>
+        <p>在macOS和Linux上，只需一秒钟即可安装客户端。</p>
       </div>
       <div class="feature-block">
         <div class="feature-icon">
           <ImageIcon size="14" />
         </div>
-        <h3>Infinite canvas</h3>
+        <h3>无限终端</h3>
         <p>
-          Create several terminals, then arrange and resize them in real time.
+          可以创建多个终端，并且任意排列它。
         </p>
       </div>
       <div class="feature-block">
         <div class="feature-icon">
           <RefreshCwIcon size="14" />
         </div>
-        <h3>Live presence</h3>
-        <p>See other people's names and cursors while they're connected.</p>
+        <h3>协作状态</h3>
+        <p>在操作时，你可以实时查看其他人的姓名和光标</p>
       </div>
       <div class="feature-block">
         <div class="feature-icon">
           <LockIcon size="14" />
         </div>
-        <h3>End-to-end encrypted</h3>
+        <h3>端到端加密</h3>
         <p>
-          Send terminal data securely; the server never sees what you're typing.
+          安全地发送终端数据;服务器永远不会看到您键入的内容。
         </p>
       </div>
       <div class="feature-block">
         <div class="feature-icon">
           <Share2Icon size="14" />
         </div>
-        <h3>Ultra-fast mesh networking</h3>
+        <h3>超快的mesh网络</h3>
         <p>
-          Connect from anywhere to the nearest distributed peer in a global
-          network.
+          从任何地方连接到全球网络中最近的分布式节点
         </p>
       </div>
     </div>
@@ -163,7 +168,7 @@
     </div>
 
     <h2 bind:this={installationEl} class="mt-40 mb-16">
-      Get started with <span class="title-gradient">two quick steps</span>
+      通过<span class="title-gradient">两步</span>快速安装
     </h2>
 
     <div
@@ -171,11 +176,10 @@
     >
       <div class="space-y-6">
         <h3 class="step-heading">
-          <span class="pill mr-3">1</span> Install the CLI
+          <span class="pill mr-3">1</span> 安装 <b>CLI</b>
         </h3>
         <p class="text-zinc-400">
-          Get <code>sshx</code> by running this command. It's tiny and downloads
-          in seconds (3 MB).
+          通过终以下终端命令获取<code>sshx</code>CLI
         </p>
         <div class="flex flex-col items-start text-base">
           <div class="flex rounded-t text-sm bg-zinc-900">
@@ -193,26 +197,25 @@
         </div>
 
         <p class="text-zinc-400">
-          You can also build it <a
+          如果你愿意，你也可以从 <a
             target="_blank"
             rel="noreferrer"
             class="underline underline-offset-2 text-zinc-300"
-            href="https://github.com/ekzhang/sshx">from source</a
-          >, if you'd like.
+            href="https://github.com/ekzhang/sshx">源代码</a
+          > 构建它。
         </p>
       </div>
       <div class="space-y-6">
         <h3 class="step-heading">
-          <span class="pill mr-3">2</span> Share your terminal
+          <span class="pill mr-3">2</span> 共享你的终端
         </h3>
 
-        <p class="text-zinc-400">Run this command in your favorite terminal.</p>
+        <p class="text-zinc-400">直接运行即可</p>
 
         <pre class="rounded">sshx</pre>
 
         <p class="text-zinc-400">
-          This kicks off a live, encrypted session. Open the link in your web
-          browser to join.
+          这将启动一个实时的加密会话，在您的浏览器中打开链接即可加入。
         </p>
       </div>
     </div>
@@ -236,6 +239,17 @@
       open source, &copy; Eric Zhang 2023
     </p>
   </main>
+  <footer class="text-center text-zinc-400" id='beian'>
+      <span>
+				<a href="https://beian.mps.gov.cn/#/query/webSearch?code=50010602503871" rel="noreferrer" target="_blank">
+					<img src="https://tools.0x5c0f.cc/img/gov.png" style="width: 21px; display: inline-block;vertical-align: middle;margin-right: 1px;"/>   
+					渝公网安备 50010602503871
+				</a>
+			</span>
+			<span>
+				<a href="http://beian.miit.gov.cn" target="_blank">渝ICP备2020011834号-2</a>
+			</span>
+		</footer>
 </div>
 
 <style lang="postcss">
