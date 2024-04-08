@@ -1,4 +1,4 @@
-FROM rust:alpine as backend
+FROM rust:1.76.0-alpine as backend
 WORKDIR /home/rust/src
 RUN apk --no-cache add musl-dev openssl-dev protoc
 RUN rustup component add rustfmt
