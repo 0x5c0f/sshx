@@ -56,7 +56,18 @@
     一个安全的基于网页的，
     <span class="title-gradient">协作</span> 终端
   </h1>
-
+  <code>
+        <h3>
+          <code class="name">
+            请注意,当前为<a target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-2 text-gray-300"
+            href="https://tools.0x5c0f.cc/">博主</a>自建节点,与官方差异仅首页翻译。来访者可任意使用，但请优先以<a target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-2 text-gray-300"
+            href="https://sshx.io/">官方</a>为准🙏🙏🙏。
+          </code>
+        </h3>
   <div class="relative">
     <div
       class="absolute scale-150 md:scale-100 md:left-[180px] md:top-[-200px] md:w-[1000px] -z-10"
