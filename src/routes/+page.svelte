@@ -53,8 +53,8 @@
   <h1
     class="font-medium text-3xl sm:text-4xl md:text-5xl max-w-[26ch] py-2 mb-6 md:mb-0 sm:tracking-tight leading-[1.15]"
   >
-    A secure web-based,
-    <span class="title-gradient">collaborative</span> terminal
+    一个安全的基于网页的，
+    <span class="title-gradient">协作</span> 终端
   </h1>
 
   <div class="relative">
@@ -69,25 +69,21 @@
         width={813}
         height={623}
         src={landingGraphic}
-        alt="two terminal windows running sshx and three live cursors"
+        alt="两个终端窗口运行 sshx 和三个实时光标"
       />
     </div>
   </div>
 
   <section class="my-12 space-y-6 sm:text-lg md:max-w-[460px] text-zinc-400">
     <p>
-      <code class="name">sshx</code> lets you share your terminal with anyone by
-      link, on a
-      <b>multiplayer infinite canvas</b>.
+      <code class="name">sshx</code> 让您通过链接与任何人共享终端，基于 
+      <b>多人无限画布</b>。
     </p>
     <p>
-      It has <b>real-time collaboration</b>, with remote cursors and chat. It's
-      also <b>fast</b> and <b>end-to-end encrypted</b>, with a lightweight
-      server written in Rust.
+      它具有<b>实时协作</b>，支持远程光标和聊天。它也<b>快速</b>并且<b>端到端加密</b>，采用用 Rust 编写的轻量级服务器。
     </p>
     <p>
-      Install <code class="name">sshx</code> with a single command. Use it for teaching,
-      debugging, or cloud access.
+      使用单个命令安装 <code class="name">sshx</code>。适用于教学、调试或云访问。
     </p>
   </section>
 
@@ -96,7 +92,7 @@
       class="bg-pink-700 hover:bg-pink-600 active:ring-4 active:ring-pink-500/50 text-lg font-medium px-8 py-2 rounded-full"
       on:click={scrollToInstallation}
     >
-      Get Started
+      开始使用
     </button>
   </div>
 
@@ -105,45 +101,44 @@
       <div class="feature-icon">
         <CastIcon size="14" />
       </div>
-      <h3>Collaborative</h3>
-      <p>Invite people by sharing a secure, unique browser link.</p>
+      <h3>协作</h3>
+      <p>通过共享一个安全的独特浏览器链接邀请他人。</p>
     </div>
     <div class="feature-block">
       <div class="feature-icon">
         <LockIcon size="14" />
       </div>
-      <h3>End-to-end encrypted</h3>
-      <p>Send data securely; the server never sees what you're typing.</p>
+      <h3>端到端加密</h3>
+      <p>安全发送数据；服务器永远无法看到您输入的内容。</p>
     </div>
     <div class="feature-block">
       <div class="feature-icon">
         <HardDriveIcon size="14" />
       </div>
-      <h3>Cross-platform</h3>
-      <p>Use the command-line tool on macOS, Linux, and Windows.</p>
+      <h3>跨平台</h3>
+      <p>在 macOS、Linux 和 Windows 上使用命令行工具。</p>
     </div>
     <div class="feature-block">
       <div class="feature-icon">
         <ImageIcon size="14" />
       </div>
-      <h3>Infinite canvas</h3>
-      <p>Move and resize multiple terminals at once, in any arrangement.</p>
+      <h3>无限画布</h3>
+      <p>一次移动和调整多个终端的大小，任何排列方式均可。</p>
     </div>
     <div class="feature-block">
       <div class="feature-icon">
         <RefreshCwIcon size="14" />
       </div>
-      <h3>Live presence</h3>
-      <p>See other people's names and cursors within the app.</p>
+      <h3>实时存在</h3>
+      <p>在应用程序中查看其他人的名字和光标。</p>
     </div>
     <div class="feature-block">
       <div class="feature-icon">
         <Share2Icon size="14" />
       </div>
-      <h3>Ultra-fast mesh networking</h3>
+      <h3>超快速网状网络</h3>
       <p>
-        Connect from anywhere to the nearest distributed peer in a global
-        network.
+        从任何地方连接到全球网络中的最近分布式对等节点。
       </p>
     </div>
   </div>
@@ -156,7 +151,7 @@
     bind:this={installationEl}
     class="mt-32 mb-12 font-medium text-3xl sm:text-4xl md:text-center scroll-mt-16"
   >
-    Installation
+    安装
   </h2>
 
   <section class="installation-section">
@@ -165,18 +160,18 @@
       macOS / Linux
     </h3>
     <div class="text-sm text-zinc-400 md:text-base md:pt-0.5">
-      <p class="mb-3">Run the following in your terminal:</p>
+      <p class="mb-3">在您的终端中运行以下命令：</p>
       <CopyableCode value="curl -sSf https://sshx.io/get | sh" />
 
-      <p class="mt-8 mb-3">Or, download the binary for your platform.</p>
+      <p class="mt-8 mb-3">或者，下载适合您平台的二进制文件。</p>
       <div class="flex flex-wrap gap-2 mb-2">
         <DownloadLink
           href="https://sshx.s3.amazonaws.com/sshx-aarch64-apple-darwin.tar.gz"
-          >macOS ARM64 (Apple Silicon)</DownloadLink
+          >macOS ARM64 (苹果芯片)</DownloadLink
         >
         <DownloadLink
           href="https://sshx.s3.amazonaws.com/sshx-x86_64-apple-darwin.tar.gz"
-          >macOS x86-64 (Intel)</DownloadLink
+          >macOS x86-64 (英特尔)</DownloadLink
         >
       </div>
       <div class="flex flex-wrap gap-2 mb-2">
@@ -212,7 +207,7 @@
       Windows
     </h3>
     <div class="text-sm text-zinc-400 md:text-base md:pt-0.5">
-      <p class="mb-3">Download the executable for your platform.</p>
+      <p class="mb-3">下载适合您平台的可执行文件。</p>
 
       <div class="flex flex-wrap gap-2">
         <DownloadLink
@@ -234,12 +229,11 @@
   <section class="installation-section">
     <h3 class="text-xl sm:text-lg">
       <PackageIcon size="20" class="text-zinc-400 inline-block mr-1 mb-0.5" />
-      Build from source
+      从源代码构建
     </h3>
     <div class="text-sm text-zinc-400 md:text-base md:pt-0.5">
       <p class="mb-3">
-        Ensure you have up-to-date versions of Rust and protoc. Compile sshx and
-        add it to the system path.
+        确保您拥有最新版本的 Rust 和 protoc。编译 sshx 并将其添加到系统路径中。
       </p>
       <CopyableCode value="cargo install sshx" />
     </div>
@@ -252,8 +246,7 @@
     </h3>
     <div class="text-sm text-zinc-400 md:text-base md:pt-0.5">
       <p class="mb-3">
-        On GitHub Actions or other CI providers, run this command. It pauses
-        your workflow and starts a collaborative session.
+        在 GitHub Actions 或其他 CI 提供商上，运行此命令。它将暂停您的工作流并开始协作会话。
       </p>
       <CopyableCode value="curl -sSf https://sshx.io/get | sh -s run" />
     </div>
@@ -275,7 +268,7 @@
   </div>
 
   <p class="mb-12 text-center text-zinc-400">
-    open source, &copy; Eric Zhang 2023
+    开源，&copy; Eric Zhang 2023
   </p>
 </main>
 
